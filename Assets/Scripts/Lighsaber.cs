@@ -46,6 +46,9 @@ public class Lighsaber : MonoBehaviour
     private Vector3 _triggerEnterTipPosition;
     private Vector3 _triggerEnterBasePosition;
     private Vector3 _triggerExitTipPosition;
+            
+    public GameObject explosion;
+    public GameObject counterTerrorist;
 
     void Start()
     {
@@ -162,4 +165,5 @@ public class Lighsaber : MonoBehaviour
         Vector3 newNormal = transformedNormal + Vector3.up * _forceAppliedToCut;
         rigidbody.AddForce(newNormal, ForceMode.Impulse);
     }
+
 }

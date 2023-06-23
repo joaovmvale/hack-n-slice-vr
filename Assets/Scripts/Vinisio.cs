@@ -7,6 +7,7 @@ public class Vinisio : MonoBehaviour
     // Start is called before the first frame update
     public GameObject vinisio;
     public GameObject conglomerado;
+    public GameObject canvas;
 
     void Start()
     {
@@ -18,6 +19,8 @@ public class Vinisio : MonoBehaviour
         yield return new WaitForSeconds(6 /* 1000 * 60*/);
         vinisio.SetActive(true);
         conglomerado.SetActive(true);
+        canvas.SetActive(true);
+        transform.gameObject.GetComponent<AudioSource>().enabled = false;
     }
 
     // Update is called once per frame
